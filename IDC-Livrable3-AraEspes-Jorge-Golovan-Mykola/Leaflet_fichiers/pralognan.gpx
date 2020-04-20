@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="IDC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <metadata>
+  <name>Pralognan - Refuge de la Leisse</name>
+  <link href="file:///fr_pralognan.xml">
+   <text>fr_pralognan.xml</text>
+  </link>
+ </metadata>
+ <wpt lat="45.38262" lon="6.71934">
+  <ele>1406</ele>
+  <name>Pralognan</name>
+ </wpt>
+ <wpt lat="45.380947" lon="6.734499">
+  <ele>1626</ele>
+  <name>Hameau des Fontanettes</name>
+ </wpt>
+ <wpt lat="45.389804" lon="6.754097">
+  <ele>2016</ele>
+  <name>Pont de la Glière</name>
+ </wpt>
+ <wpt lat="45.37644" lon="6.83393">
+  <ele>2100</ele>
+  <name>Pont de Croe Vie</name>
+ </wpt>
+ <wpt lat="45.389596" lon="6.843919">
+  <ele>2221</ele>
+  <name>Torrent de la Leisse</name>
+ </wpt>
+ <trk>
+  <name>Pralognan - Refuge de la Leisse</name>
+  <trkseg>
+   <trkpt lat="45.38262" lon="6.71934">
+    <ele>1406</ele>
+    <time>2020-04-15T14:00:00+02:00</time>
+    <name>Pralognan</name>
+   </trkpt>
+   <trkpt lat="45.380947" lon="6.734499">
+    <ele>1626</ele>
+    <time>2020-04-15T14:15:00+02:00</time>
+    <name>Hameau des Fontanettes</name>
+   </trkpt>
+   <trkpt lat="45.389804" lon="6.754097">
+    <ele>2016</ele>
+    <time>2020-04-15T14:30:00+02:00</time>
+    <name>Pont de la Glière</name>
+   </trkpt>
+   <trkpt lat="45.37644" lon="6.83393">
+    <ele>2100</ele>
+    <time>2020-04-15T15:00:00+02:00</time>
+    <name>Pont de Croe Vie</name>
+   </trkpt>
+   <trkpt lat="45.389596" lon="6.843919">
+    <ele>2221</ele>
+    <time>2020-04-15T15:15:00+02:00</time>
+    <name>Torrent de la Leisse</name>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

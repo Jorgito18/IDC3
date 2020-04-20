@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="http://www.tei-c.org/ns/1.0" xmlns:dcr="http://www.isocat.org/ns/dcr"
+  xmlns:tei="http://www.tei-c.org/ns/1.0">
+  <xs:import namespace="http://www.isocat.org/ns/dcr" schemaLocation="dcr.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <!--
+    Schema generated from ODD source 2020-03-26T20:05:38Z. .
+    TEI Edition: Version 4.0.0. Last updated on
+    	13th February 2020, revision ccd19b0ba
+    TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
+    
+  -->
+  <!---->
+  <xs:complexType name="tei_macro.paraContent" mixed="true">
+    <xs:group minOccurs="0" maxOccurs="unbounded" ref="tei:tei_model.phrase"/>
+  </xs:complexType>
+  <xs:complexType name="tei_macro.phraseSeq" mixed="true">
+    <xs:group minOccurs="0" maxOccurs="unbounded" ref="tei:tei_model.phrase"/>
+  </xs:complexType>
+  <xs:attributeGroup name="tei_att.canonical.attributes">
+    <xs:attributeGroup ref="tei:tei_att.canonical.attribute.ref"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="tei_att.canonical.attribute.ref">
+    <xs:attribute name="ref">
+      <xs:annotation>
+        <xs:documentation>(référence) fournit un moyen explicite de localiser une définition complète de l'entité nommée au moyen d'un ou plusieurs URIs.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction>
+          <xs:simpleType>
+            <xs:list itemType="xs:anyURI"/>
+          </xs:simpleType>
+          <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="tei_att.linguistic.attribute.lemma">
+    <xs:attribute name="lemma" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>fournit le lemme du mot (entrée du dictionnaire)</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="tei_att.typed.attributes">
+    <xs:attributeGroup ref="tei:tei_att.typed.attribute.type"/>
+    <xs:attributeGroup ref="tei:tei_att.typed.attribute.subtype"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="tei_att.typed.attribute.type">
+    <xs:attribute name="type">
+      <xs:annotation>
+        <xs:documentation>caractérise l'élément en utilisant n'importe quel système ou typologie de classification approprié.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:pattern value="[^\p{C}\p{Z}]+"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="tei_att.typed.attribute.subtype">
+    <xs:attribute name="subtype">
+      <xs:annotation>
+        <xs:documentation>(sous-type) fournit une sous-catégorisation de l'élément, si c'est nécessaire.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:pattern value="[^\p{C}\p{Z}]+"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:group name="tei_model.nameLike.agent">
+    <xs:sequence>
+      <xs:element ref="tei:name"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike.agent_alternation">
+    <xs:sequence>
+      <xs:element ref="tei:name"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike.agent_sequence">
+    <xs:sequence>
+      <xs:element ref="tei:name"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike.agent_sequenceOptional">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="tei:name"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike.agent_sequenceOptionalRepeatable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:name"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike.agent_sequenceRepeatable">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" ref="tei:name"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.segLike">
+    <xs:choice>
+      <xs:element ref="tei:s"/>
+      <xs:element ref="tei:phr"/>
+      <xs:element ref="tei:w"/>
+      <xs:element ref="tei:pc"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.emphLike">
+    <xs:choice>
+      <xs:element ref="tei:title"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.emphLike_alternation">
+    <xs:choice>
+      <xs:element ref="tei:term"/>
+      <xs:element ref="tei:title"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.emphLike_sequence">
+    <xs:sequence>
+      <xs:element ref="tei:term"/>
+      <xs:element ref="tei:title"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.emphLike_sequenceOptional">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="tei:term"/>
+      <xs:element minOccurs="0" ref="tei:title"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.emphLike_sequenceOptionalRepeatable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:term"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:title"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.emphLike_sequenceRepeatable">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" ref="tei:term"/>
+      <xs:element maxOccurs="unbounded" ref="tei:title"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.highlighted">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.emphLike"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.pLike">
+    <xs:sequence>
+      <xs:element ref="tei:p"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.pLike_alternation">
+    <xs:sequence>
+      <xs:element ref="tei:p"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.pLike_sequence">
+    <xs:sequence>
+      <xs:element ref="tei:p"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.pLike_sequenceOptional">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="tei:p"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.pLike_sequenceOptionalRepeatable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:p"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.pLike_sequenceRepeatable">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" ref="tei:p"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.divPart">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.pLike"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeNamePart">
+    <xs:choice>
+      <xs:element ref="tei:placeName"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.placeNamePart_alternation">
+    <xs:choice>
+      <xs:element ref="tei:placeName"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.placeNamePart_sequence">
+    <xs:sequence>
+      <xs:element ref="tei:placeName"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeNamePart_sequenceOptional">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="tei:placeName"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeNamePart_sequenceOptionalRepeatable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:placeName"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeNamePart_sequenceRepeatable">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" ref="tei:placeName"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeStateLike">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.placeNamePart"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeStateLike_alternation">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.placeNamePart_alternation"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeStateLike_sequence">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.placeNamePart_sequence"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeStateLike_sequenceOptional">
+    <xs:sequence>
+      <xs:group minOccurs="0" ref="tei:tei_model.placeNamePart_sequenceOptional"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeStateLike_sequenceOptionalRepeatable">
+    <xs:sequence>
+      <xs:group minOccurs="0" maxOccurs="unbounded"
+        ref="tei:tei_model.placeNamePart_sequenceOptionalRepeatable"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.placeStateLike_sequenceRepeatable">
+    <xs:sequence>
+      <xs:group maxOccurs="unbounded" ref="tei:tei_model.placeNamePart_sequenceRepeatable"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike">
+    <xs:choice>
+      <xs:group ref="tei:tei_model.nameLike.agent"/>
+      <xs:group ref="tei:tei_model.placeStateLike"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.nameLike_alternation">
+    <xs:choice>
+      <xs:group ref="tei:tei_model.nameLike.agent_alternation"/>
+      <xs:group ref="tei:tei_model.placeStateLike_alternation"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.nameLike_sequence">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.nameLike.agent_sequence"/>
+      <xs:group ref="tei:tei_model.placeStateLike_sequence"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike_sequenceOptional">
+    <xs:sequence>
+      <xs:group minOccurs="0" ref="tei:tei_model.nameLike.agent_sequenceOptional"/>
+      <xs:group minOccurs="0" ref="tei:tei_model.placeStateLike_sequenceOptional"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.nameLike_sequenceOptionalRepeatable">
+    <xs:sequence>
+      <xs:group minOccurs="0" maxOccurs="unbounded"
+        ref="tei:tei_model.nameLike.agent_sequenceOptionalRepeatable"/>
+      <xs:group minOccurs="0" maxOccurs="unbounded"
+        ref="tei:tei_model.placeStateLike_sequenceOptionalRepeatable"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.pPart.data">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.nameLike"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.common">
+    <xs:sequence>
+      <xs:group ref="tei:tei_model.divPart"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="tei_model.phrase">
+    <xs:choice>
+      <xs:group ref="tei:tei_model.segLike"/>
+      <xs:group ref="tei:tei_model.highlighted"/>
+      <xs:group ref="tei:tei_model.pPart.data"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="tei_model.resource">
+    <xs:sequence>
+      <xs:element ref="tei:text"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="p" type="tei:tei_macro.paraContent">
+    <xs:annotation>
+      <xs:documentation>(paragraphe) marque les paragraphes dans un texte en prose. [3.1. Paragraphs 7.2.5. Speech Contents]</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="term">
+    <xs:annotation>
+      <xs:documentation>(terme) contient un mot simple, un mot composé ou un symbole, qui est considéré comme un terme technique. [3.3.4. Terms, Glosses, Equivalents, and Descriptions]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="tei:tei_macro.phraseSeq">
+          <xs:attributeGroup ref="tei:tei_att.typed.attribute.type"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="tei:tei_macro.phraseSeq">
+    <xs:annotation>
+      <xs:documentation>(nom, nom propre) contient un nom propre ou un syntagme nominal. [3.5.1. Referring Strings]</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="title" type="tei:tei_macro.paraContent">
+    <xs:annotation>
+      <xs:documentation>(titre) contient le titre complet d'une oeuvre quelconque [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="teiHeader" type="tei:tei_fileDesc">
+    <xs:annotation>
+      <xs:documentation>(en-tête TEI) fournit des informations descriptives et déclaratives qui constituent une page de titre électronique au début de tout texte conforme à la TEI. [2.1.1. The TEI Header and Its Components 15.1. Varieties of Composite Text]</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="tei_fileDesc">
+    <xs:sequence>
+      <xs:element ref="tei:fileDesc"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="fileDesc">
+    <xs:annotation>
+      <xs:documentation>(description bibliographique du fichier) contient une description bibliographique complète du fichier électronique. [2.2. The File Description 2.1.1. The TEI Header and Its Components]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence>
+          <xs:element ref="tei:titleStmt"/>
+          <xs:element ref="tei:publicationStmt"/>
+        </xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tei:sourceDesc"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titleStmt">
+    <xs:annotation>
+      <xs:documentation>(mention de titre) regroupe les informations sur le titre d’une œuvre et les personnes ou institutions responsables de son contenu intellectuel. [2.2.1. The Title Statement 2.2. The File Description]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tei:title"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="publicationStmt">
+    <xs:annotation>
+      <xs:documentation>(mention de publication) regroupe des informations concernant la publication ou la diffusion d’un texte électronique ou d’un autre type de texte. [2.2.4. Publication, Distribution, Licensing, etc. 2.2. The File Description]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group maxOccurs="unbounded" ref="tei:tei_model.pLike"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sourceDesc">
+    <xs:annotation>
+      <xs:documentation>(description de la source) décrit la source à partir de laquelle un texte électronique a été dérivé ou produit, habituellement une description bibliographique pour un texte numérisé, ou une expression comme "document numérique natif " pour un texte qui n'a aucune existence précédente. [2.2.7. The Source Description]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group maxOccurs="unbounded" ref="tei:tei_model.pLike"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TEI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tei:teiHeader"/>
+        <xs:choice>
+          <xs:sequence>
+            <xs:group maxOccurs="unbounded" ref="tei:tei_model.resource"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:TEI"/>
+          </xs:sequence>
+          <xs:element maxOccurs="unbounded" ref="tei:TEI"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text" type="tei:tei_body">
+    <xs:annotation>
+      <xs:documentation>(texte) contient un seul texte quelconque, simple ou composite, par exemple un poème ou une pièce de théâtre, un recueil d’essais, un roman, un dictionnaire ou un échantillon de corpus. [4. Default Text Structure 15.1. Varieties of Composite Text]</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="tei_body">
+    <xs:sequence>
+      <xs:element ref="tei:body"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="body">
+    <xs:annotation>
+      <xs:documentation>(corps du texte) contient la totalité du corps d’un seul texte simple, à l’exclusion de toute partie pré- ou post-liminaire. [4. Default Text Structure]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group maxOccurs="unbounded" ref="tei:tei_model.common"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="s" type="tei:tei_macro.phraseSeq">
+    <xs:annotation>
+      <xs:documentation>(phrase) contient une division textuelle de type phrase [17.1. Linguistic Segment Categories 8.4.1. Segmentation]</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="phr">
+    <xs:annotation>
+      <xs:documentation>(syntagme) représente un syntagme grammatical [17.1. Linguistic Segment Categories]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="tei:tei_macro.phraseSeq">
+          <xs:attribute name="function" default="directions">
+            <xs:annotation>
+              <xs:documentation>(fonction) caractérise la fonction du segment.
+Exemple de valeurs possibles: 1] directions</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:pattern value="[^\p{C}\p{Z}]+"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="type" default="verb_phrase">
+            <xs:annotation>
+              <xs:documentation>caractérise l'élément en utilisant n'importe quel système ou typologie de classification approprié.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="verb_phrase">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="subtype" default="motion">
+            <xs:annotation>
+              <xs:documentation>(sous-type) fournit une sous-catégorisation de l'élément, si c'est nécessaire.
+Exemple de valeurs possibles: 1] motion; 2] information</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:pattern value="[^\p{C}\p{Z}]+"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="w">
+    <xs:annotation>
+      <xs:documentation>(mot) représente un mot grammatical (pas nécessairement orthographique) [17.1. Linguistic Segment Categories 17.4.2. Lightweight Linguistic Annotation]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="tei:tei_att.typed.attribute.subtype"/>
+      <xs:attributeGroup ref="tei:tei_att.linguistic.attribute.lemma"/>
+      <xs:attribute name="type">
+        <xs:annotation>
+          <xs:documentation>caractérise l'élément en utilisant n'importe quel système ou typologie de classification approprié.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="ABR">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ADJ">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ADV">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="DET:POS">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="DET:ART">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="INT">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="KON">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NAM">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NOM">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NUM">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRO">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRO:DEM">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRO:IND">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRO:PER">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRO:POS">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRO:REL">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PRP:det">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PUN">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PUN:cit">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="SENT">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="SYM">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:cond">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:futu">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:impe">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:impf">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:infi">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:pper">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:ppre">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:pres">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:simp">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:subi">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VER:subp">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NPR"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pc">
+    <xs:annotation>
+      <xs:documentation>(punctuation character) contient un caractère ou une chaîne de caractères considérés comme un signe de ponctuation unique. [17.1.2. Below the Word Level 17.4.2. Lightweight Linguistic Annotation]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:attribute name="force">
+        <xs:annotation>
+          <xs:documentation>the influence of the punctuation</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="strong">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="weak">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="inter">
+              <xs:annotation>
+                <xs:documentation/>
+              </xs:annotation>
+            </xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="placeName">
+    <xs:annotation>
+      <xs:documentation>(nom de lieu) contient un nom de lieu absolu ou relatif. [13.2.3. Place Names]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="tei:tei_macro.phraseSeq">
+          <xs:attributeGroup ref="tei:tei_att.canonical.attribute.ref"/>
+          <xs:attribute name="id">
+            <xs:annotation>
+              <xs:documentation>(identifiant) fournit un identifiant unique pour l'élément qui porte l'attribut</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="en.0">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="en.1">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="en.2">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="en.3">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="en.4">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="en.5">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="en.6">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="en.7">
+                  <xs:annotation>
+                    <xs:documentation/>
+                  </xs:annotation>
+                </xs:enumeration>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

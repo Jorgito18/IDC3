@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Cussac_Track.xsl"?>
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xsi:noNamespaceSchemaLocation="document_Trans.xsd">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><!-- title of the resource --></title>
+         </titleStmt>
+         <publicationStmt>
+            <p><!-- Information about distribution of the resource --></p>
+         </publicationStmt>
+         <sourceDesc>
+            <p><!-- Information about source from which the resource derives --></p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <s>
+               <phr type="verb_phrase" subtype="information">
+                  <w lemma="boucle" type="NOM">Boucle</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <w lemma="randonnée" type="NOM">randonnée</w>
+                  <w lemma="pouvoir" type="VER:ppre">pouvant</w>
+                  <w lemma="se" type="PRO:PER">se</w>
+                  <w lemma="faire" type="VER:infi">faire</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <w lemma="pied" type="NOM">pieds</w>
+                  <w lemma="ou" type="KON">ou</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <w lemma="vtt" type="NAM">VTT</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <phr type="verb_phrase" subtype="motion" function="origin">
+                  <w lemma="elle" type="PRO:PER">Elle</w>
+                  <w lemma="partir" type="VER:pres">part</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <placeName id="en.0" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Cussac" type="NAM">Cussac</w>
+                     </name>
+                  </placeName>
+                  <w lemma="en" type="PRO:REL">en</w>
+                  <w lemma="haute-vienne" type="NAM">Haute-Vienne</w>
+               </phr>
+               <pc force="weak">,</pc>
+               <w lemma="sur" type="PRO:REL">sur</w>
+               <w lemma="le" type="DET:ART">la</w>
+               <w lemma="place" type="NOM">place</w>
+               <w lemma="de" type="PRO:REL">de</w>
+               <w lemma="le" type="DET:ART">l'</w>
+               <w lemma="église" type="NOM">église</w>
+               <w lemma="puis" type="ADV">puis</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="descendre" type="VER:pres">descend</w>
+                  <w lemma="vers" type="PRO:REL">vers</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="station" type="NOM">station</w>
+                  <w lemma="de" type="PRO:REL">d'</w>
+                  <w lemma="épuration" type="NOM">épuration</w>
+               </phr>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="emprunter">empruntant</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="du" type="PRP:det">du</w>
+                  <w lemma="parcours" type="NOM">parcours</w>
+                  <w lemma="sportif" type="ADJ">sportif</w>
+                  <w lemma="derrière" type="PRO:REL">derrière</w>
+                  <w lemma="la" type="DET:ART">l'</w>
+                  <w lemma="église" type="NOM">église</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="le" type="DET:ART">Le</w>
+               <w lemma="sentier" type="NOM">sentier</w>
+               <w lemma="descendre" type="VER:pres">descend</w>
+               <w lemma="pour" type="PRO:REL">pour</w>
+               <phr type="verb_phrase" subtype="motion">
+                  <w lemma="traverser" type="VER:infi">traverser</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="rivière" type="NOM">rivière</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <w lemma="la" type="DET:ART">l'</w>
+                  <w lemma="ancienne" type="ADJ">ancienne</w>
+                  <w lemma="usine" type="NOM">usine</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <placeName id="en.1" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Monnerie" type="NAM">Monnerie</w>
+                     </name>
+                  </placeName>
+                  <w lemma="et" type="KON">et</w>
+                  <w lemma="son" type="DET:POS">son</w>
+                  <w lemma="étang" type="NOM">étang</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="en" type="PRO:PER">En</w>
+               <w lemma="passer" type="VER:ppre">passant</w>
+               <w lemma="à" type="PRO:REL">à</w>
+               <w lemma="côté" type="NOM">côté</w>
+               <w lemma="de" type="PRO:REL">de</w>
+               <w lemma="le" type="DET:ART">l'</w>
+               <w lemma="usine" type="NOM">usine</w>
+               <pc force="weak">,</pc>
+               <phr type="verb_phrase" subtype="motion">
+                  <w lemma="on" type="PRO:PER">on</w>
+                  <w lemma="traverse" type="VER:pres">traverse</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="route" type="NOM">route</w>
+                  <w lemma="pour" type="PRO:REL">pour</w>
+                  <w lemma="longer" type="VER:infi">longer</w>
+                  <w lemma="le" type="DET:ART">l'</w>
+                  <w lemma="étang" type="NOM">étang</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="le" type="DET:ART">Le</w>
+               <w lemma="sentier" type="NOM">sentier</w>
+               <phr type="verb_phrase" subtype="motion">
+                  <w lemma="remonter" type="VER:pres">remonte</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="terrain" type="NOM">terrain</w>
+                  <w lemma="international" type="ADJ">international</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <w lemma="moto" type="NAM">Moto</w>
+                  <w lemma="cross" type="NAM">Cross</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="à" type="PRO:REL">A</w>
+                  <w lemma="partir" type="VER:infi">partir</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <w lemma="là" type="ADV">là</w>
+                  <w lemma="vous" type="PRO:PER">vous</w>
+                  <w lemma="suivre" type="VER:pres">suivez</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="balisage" type="NOM">balisage</w>
+                  <w lemma="jaune" type="ADJ">jaune</w>
+                  <w lemma="de" type="PRO:REL">d'</w>
+                  <w lemma="un" type="DET:ART">un</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="pdipr" type="NAM">PDIPR</w>
+               </phr>
+               <w lemma="qui" type="PRO:REL">qui</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="partir" type="VER:pres">part</w>
+                  <w lemma="dans" type="PRO:REL">dans</w>
+                  <w lemma="du" type="PRP:det">des</w>
+                  <w lemma="chemin" type="NOM">chemins</w>
+                  <w lemma="au" type="PRP:det">au</w>
+                  <w lemma="milieu" type="NOM">milieu</w>
+                  <w lemma="du" type="PRP:det">des</w>
+                  <w lemma="bois" type="NOM">bois</w>
+                  <w lemma="et" type="KON">et</w>
+                  <w lemma="du" type="PRP:det">des</w>
+                  <w lemma="près" type="ADV">près</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="Ensuite" type="ADV">Ensuite</w>
+               <w lemma="vous" type="PRO:PER">vous</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="prendre" type="VER:pres">prenez</w>
+                  <w lemma="toujours" type="ADV">toujours</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="chemin" type="NOM">chemin</w>
+                  <w lemma="face" type="NOM">face</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <w lemma="vous" type="PRO:PER">vous</w>
+                  <w lemma="jusque" type="PRO:REL">jusqu'</w>
+                  <w lemma="au" type="PRP:det">au</w>
+                  <w lemma="village" type="NOM">village</w>
+                  <w lemma="le" type="DET:ART">Les</w>
+                  <placeName id="en.2" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Liades" type="NAM">Liades</w>
+                     </name>
+                  </placeName>
+               </phr>
+               <w lemma="où" type="PRO:REL">où</w>
+               <w lemma="vous" type="PRO:PER">vous</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="prendre" type="VER:pres">prenez</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <w lemma="droit|droite" type="NOM">droite</w>
+                  <w lemma="avant" type="PRO:REL">avant</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="village" type="NOM">village</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="vous" type="PRO:PER">Vous</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="continuer" type="VER:pres">continuez</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="chemin" type="NOM">chemin</w>
+                  <w lemma="en" type="PRO:REL">en</w>
+                  <w lemma="aller" type="VER:ppre">allant</w>
+                  <w lemma="toujours" type="ADV">toujours</w>
+                  <w lemma="tout" type="ADV">tout</w>
+                  <w lemma="droit" type="NOM">droite</w>
+                  <w lemma="jusque" type="PRO:REL">jusqu'</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <w lemma="arriver" type="VER:infi">arriver</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="départemental" type="ADJ">départementale</w>
+               </phr>
+               <w lemma="que" type="PRO:REL">que</w>
+               <w lemma="vous" type="PRO:PER">vous</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="traverser" type="VER:pres">traversez</w>
+                  <w lemma="en" type="PRO:REL">en</w>
+                  <w lemma="prendre" type="VER:ppre">prenant</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="sentier" type="NOM">sentiers</w>
+                  <w lemma="en" type="PRO:REL">en</w>
+                  <w lemma="face" type="NOM">face</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <w lemma="votre" type="DET:POS">votre</w>
+                  <w lemma="gauche" type="NOM">gauche</w>
+                  <w lemma="qui" type="PRO:REL">qui</w>
+                  <w lemma="rejoindre" type="VER:pres">rejoint</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="forêt" type="NOM">forêt</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <placeName id="en.3" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Boubon" type="NAM">Boubon</w>
+                     </name>
+                  </placeName>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="à" type="PRO:REL">A</w>
+               <w lemma="partir" type="VER:infi">partir</w>
+               <w lemma="de" type="PRO:REL">de</w>
+               <w lemma="là" type="ADV">là</w>
+               <w lemma="vous" type="PRO:PER">vous</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="retrouver" type="VER:pres">retrouvez</w>
+                  <w lemma="un" type="DET:ART">un</w>
+                  <w lemma="autre" type="ADJ">autre</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="pdipr" type="NAM">PDIPR</w>
+                  <w lemma="avec" type="PRO:REL">avec</w>
+                  <w lemma="un" type="DET:ART">un</w>
+                  <w lemma="balisage" type="NOM">balisage</w>
+                  <w lemma="jaune" type="ADJ">jaune</w>
+               </phr>
+               <w lemma="que" type="PRO:REL">que</w>
+               <w lemma="vous" type="PRO:PER">vous</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="suivre" type="VER:pres">suivez</w>
+                  <w lemma="pour" type="PRO:REL">pour</w>
+                  <w lemma="monter" type="VER:infi">monter</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="point" type="NOM">point</w>
+                  <w lemma="culminer" type="VER:ppre">culminant</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="forêt" type="NOM">forêt</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="Celle" type="PRO:DEM">Celle</w>
+               <w lemma="-ci" type="ADV">-ci</w>
+               <phr type="verb_phrase" subtype="information">
+                  <w lemma="avoir" type="VER:pres">a</w>
+                  <w lemma="abriter" type="VER:pper">abrité</w>
+                  <w lemma="un" type="DET:ART">un</w>
+                  <w lemma="monastère" type="NOM">monastère</w>
+                  <w lemma="et" type="KON">et</w>
+                  <w lemma="le" type="DET:ART">les</w>
+                  <w lemma="maquisards" type="NOM">maquisards</w>
+                  <w lemma="pendant" type="PRO:REL">pendant</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="second" type="NUM">seconde</w>
+                  <w lemma="guerre" type="NOM">guerre</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="vous" type="PRO:PER">vous</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="suivre" type="VER:pres">suivez</w>
+                  <w lemma="ce" type="PRO:DEM">ce</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="jusque" type="PRO:REL">jusqu'</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <placeName id="en.4" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Villajou" type="NAM">Villajou</w>
+                     </name>
+                  </placeName>
+               </phr>
+               <w lemma="où" type="PRO:REL">où</w>
+               <w lemma="vous" type="PRO:PER">vous</w>
+               <w lemma="aller" type="VER:pres">allez</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="prendre" type="VER:pres">prenez</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <w lemma="gauche" type="NOM">gauche</w>
+                  <w lemma="avant" type="PRO:REL">avant</w>
+                  <w lemma="de" type="PRO:REL">d'</w>
+                  <w lemma="arriver" type="VER:infi">arriver</w>
+                  <w lemma="dans" type="PRO:REL">dans</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="village" type="NOM">village</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="en" type="PRO:REL">En</w>
+                  <w lemma="prendre" type="VER:ppre">prenant</w>
+                  <w lemma="toujours" type="ADV">toujours</w>
+                  <w lemma="tout" type="PRO:IND">tout</w>
+                  <w lemma="droit" type="NOM">droit</w>
+                  <w lemma="vous" type="PRO:PER">vous</w>
+                  <w lemma="arriver" type="VER:pres">arrivez</w>
+                  <w lemma="à" type="PRO:REL">à</w>
+                  <placeName id="en.5" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Puymoroux" type="NAM">Puymoroux</w>
+                     </name>
+                  </placeName>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <phr type="verb_phrase" subtype="information">
+                  <w lemma="dans" type="PRO:REL">Dans</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="village" type="NOM">village</w>
+                  <w lemma="vous" type="PRO:PER">vous</w>
+                  <w lemma="avoir" type="VER:pres">avez</w>
+                  <w lemma="un" type="DET:ART">un</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="en" type="PRO:REL">en</w>
+                  <w lemma="face" type="NOM">face</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="droit|droite" type="NOM">droite</w>
+                  <w lemma="qui" type="PRO:REL">qui</w>
+                  <w lemma="descendre" type="VER:pres">descend</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="vous" type="PRO:PER">Vous</w>
+               <w lemma="le" type="DET:ART">le</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="suivre" type="VER:pres">suivez</w>
+                  <w lemma="pour" type="PRO:REL">pour</w>
+                  <w lemma="arriver" type="VER:infi">arriver</w>
+                  <w lemma="au" type="PRP:det">au</w>
+                  <w lemma="village" type="NOM">village</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="brégère" type="NAM">Brégère</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <w lemma="Ensuite" type="ADV">Ensuite</w>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="prendre" type="VER:pres">prenez</w>
+                  <w lemma="le" type="DET:ART">la</w>
+                  <w lemma="route" type="NOM">route</w>
+                  <w lemma="pour" type="PRO:REL">pour</w>
+                  <w lemma="finir" type="VER:infi">finir</w>
+                  <w lemma="de" type="PRO:REL">d'</w>
+                  <w lemma="arriver" type="VER:infi">arriver</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <placeName id="en.6" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Cussac" type="NAM">Cussac</w>
+                     </name>
+                  </placeName>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <phr type="verb_phrase" subtype="information">
+                  <w lemma="le" type="DET:ART">Le</w>
+                  <w lemma="sentier" type="NOM">sentier</w>
+                  <w lemma="arriver" type="VER:pres">arrive</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <w lemma="le" type="DET:ART">le</w>
+                  <w lemma="moulin" type="NOM">moulin</w>
+                  <w lemma="et" type="KON">et</w>
+                  <w lemma="traverse" type="VER:pres">traverse</w>
+                  <w lemma="de" type="PRO:REL">de</w>
+                  <w lemma="nombreux" type="ADJ">nombreux</w>
+                  <w lemma="village" type="NOM">villages</w>
+                  <w lemma="typique" type="ADJ">typiques</w>
+                  <w lemma="limousins" type="NAM">Limousins</w>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+            <s>
+               <phr type="verb_phrase" subtype="motion" function="directions">
+                  <w lemma="Il" type="PRO:PER">Il</w>
+                  <w lemma="revient" type="VER:pres">revient</w>
+                  <w lemma="tranquillement" type="ADV">tranquillement</w>
+                  <w lemma="sur" type="PRO:REL">sur</w>
+                  <placeName id="en.7" ref="file:fr_Cussac_coord_entites.xml">
+                     <name>
+                        <w lemma="Cussac" type="NAM">Cussac</w>
+                     </name>
+                  </placeName>
+               </phr>
+               <pc force="strong">.</pc>
+            </s>
+         </p>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<geolocalisation  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:noNamespaceSchemaLocation="localisation-2.xsd">
+   <entite_nom id="en.0" lng="0.8519611512411495" lat="45.7055740420633" alt="349.0322265625">Cussac</entite_nom>
+   <entite_nom id="en.1" lng="0.859333" lat="45.712939" alt="280.5089111328125">Monnerie</entite_nom>
+   <entite_nom id="en.2" lng="0.857138" lat="45.687754" alt="376.1028137207031">Liades</entite_nom>
+   <entite_nom id="en.3" lng="0.8256439978387133" lat="45.67243279742165" alt="415.4050903320312">Boubon</entite_nom>
+   <entite_nom id="en.4" lng="0.8219117961938217" lat="45.67606269511061" alt="420.0135498046875">Villajou</entite_nom>
+   <entite_nom id="en.5" lng="0.8150905847864954" lat="45.68782102152895" alt="380.9435729980469">Puymoroux</entite_nom>
+   <entite_nom id="en.6" lng="0.8519611512411495" lat="45.7055740420633" alt="349.0322265625">Cussac</entite_nom>
+   <entite_nom id="en.7" lng="0.8519611512411495" lat="45.7055740420633" alt="349.0322265625">Cussac</entite_nom>   
+</geolocalisation>
