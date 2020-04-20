@@ -11,25 +11,36 @@
 	<body>
 			<script src="leaflet.js"></script>
 			<script src="gpx.min.js"></script>
-			<div id="map" style="width: 1900px; height: 990px; position: relative" />
+			<div id="map" style="width: 99.5%; height: 99%; position: absolute;" />
 			<script>
-					/* Définition de la localisation et de la taille du fond de carte à visualiser */
+					/* Définition de la carte et du fichier gpx a utiliser*/
 					var map = L.map('map');
 					L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 					  attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
 					}).addTo(map);
 
 					var gpx = 'fr_Cussac_Track.gpx'; // URL to your GPX file or the GPX itself
-					new L.GPX(gpx, {async: true}).on('loaded', function(e) {
+					new L.GPX(gpx, {
+						async: true,
+						marker_options: {
+								wptIconUrls: {
+									'': 'marker-icon.png',
+								},
+								startIconUrl: 'marker-icon.png',
+								endIconUrl: 'marker-icon.png',
+								shadowUrl: 'marker-shadow.png'
+						}
+					}).on('loaded', function(e) {
 				  	map.fitBounds(e.target.getBounds());
+						var test = e.target.get_start_time();
+						console.log(test);
 					}).addTo(map);
-
 				  /* On peut aussi demander de renvoyer la coordonnée du point clicqué sur la carte */
 					var popup = L.popup();
 					function onMapClick(e) {
-							popup.setLatLng(e.latlng)
-							popup.setContent("Pointé à la coordonnée " + e.latlng.toString())
-							popup.openOn(mymap);
+							popup.setLatLng(e.latlng);
+							popup.setContent("Coordonnées: " + e.latlng.toString());
+							popup.openOn(map);
 					}
 					map.on('click', onMapClick);
 			</script>
