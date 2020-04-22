@@ -29,6 +29,12 @@
 								startIconUrl: 'marker-icon.png',
 								endIconUrl: 'marker-icon.png',
 								shadowUrl: 'marker-shadow.png'
+						},
+						polyline_options: {
+								color: '#6a7ee1',
+								opacity: 1,
+								weight: 7,
+								lineCap: 'round'
 						}
 					}).on('loaded', function(e) {
 				  	map.fitBounds(e.target.getBounds());
